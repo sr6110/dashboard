@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import userIcon from '../../assets/images/userIcon.svg';
+import userIcon from '/images/userIcon.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import LogOutIcon from '../../assets/images/logOutIcon.svg';
-import TransactionIcon from '../../assets/images/transactionIcon.svg';
-import FdIcon from '../../assets/images/Group130.svg';
+import LogOutIcon from '/images/logOutIcon.svg';
+import TransactionIcon from '/images/transactionIcon.svg';
+import FdIcon from '/images/Group130.svg';
 import { faChevronDown, faChevronUp, faEnvelope, faPhoneVolume, faUserAlt } from '@fortawesome/free-solid-svg-icons';
 import ProfileDropdownContent from './ProfileDropdownContent';
 import SupportItem from './SupportItem';

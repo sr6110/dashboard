@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import checkImg from '../assets/images/icon-awesome-check-circle.svg';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { convertColorToRGBA } from '../utils/utility';
 import { implementationNeeded } from '../utils/sample';
