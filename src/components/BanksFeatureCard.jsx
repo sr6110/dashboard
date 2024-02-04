@@ -7,7 +7,7 @@ import { implementationNeeded } from '../utils/sample';
 const BanksFeatureCard = ({ bankCard }) => {
     const { logo, bankName, features, interestRate, color } = bankCard
     return (
-        <div className={`border-white border-4 p-4 w-[48%]`} style={{ backgroundColor: convertColorToRGBA(color, 0.08) }}>
+        <div className={`border-white border-4 p-4 w-[48%] max-sm:w-full max-[991px]:w-full`} style={{ backgroundColor: convertColorToRGBA(color, 0.08) }}>
             <div className='flex items-center gap-2 pb-4'>
                 <img src={`\images\/${logo}`} className='w-12 h-12' alt={`${bankName} logo`} />
                 <h2 className='text-sm font-bold'>{bankName}</h2>

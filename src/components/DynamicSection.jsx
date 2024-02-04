@@ -8,12 +8,12 @@ const DynamicSection = ({ card }) => {
 
     return (
         <div className={`bg-white px-5 py-4 shadow ${index == 0 ? 'rounded-t-md border-b border-[#EBEBEB]' : index == totalCards - 1 ? 'rounded-b-md' : 'border-b border-[#EBEBEB]'}`}>
-            <h1 className='text-2xl'>{title}</h1>
-            <div className='flex justify-between py-4'>
+            <h1 className='text-xl'>{title}</h1>
+            <div className='flex gap-x-4 py-4'>
                 <div>
                     <div className='text-gray-500 text-sm'>{dateTitle}</div>
                     <div className='text-center py-2'>
-                        <div className='text-5xl px-2 py-2 bg-gray-100 font-bold'>{day}</div>
+                        <div className='text-4xl py-1 bg-gray-100 font-bold'>{day}</div>
                         <div className='text-sm bg-[#CE5151] px-2 py-1 text-white'>{monthName}, {year}</div>
                     </div>
                 </div>

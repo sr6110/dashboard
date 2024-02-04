@@ -2,6 +2,12 @@
 
 ## Description
 
+This project implements a visually appealing and informative dashboard to help you gain insights into various domains. Built using React, Tailwind CSS, Vite, and Google Charts, it offers a wide range of interactive components to visualize data and enhance user experience.
+
+## Live Demo
+
+Experience the dashboard live at https://dashboardbysunil.netlify.app/.
+
 ## Technologies
 
 - HTML
