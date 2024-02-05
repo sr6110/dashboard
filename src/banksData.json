@@ -7,12 +7,7 @@
             "RBI Insured"
         ],
         "interestRate": 9.1,
-        "color": "#520B8D",
-        "cardColors": [
-            "#F8F0FF",
-            "#EFDDFF",
-            "rgb(82, 11, 141)"
-        ]
+        "color": "#520B8D"
     },
     {
         "logo": "bajaj_logo.png",
@@ -22,12 +17,7 @@
             "No Video KYC required"
         ],
         "interestRate": 8.8,
-        "color": "rgb(0, 114, 187)",
-        "cardColors": [
-            "#EFF6FF",
-            "#0072BB",
-            "rgb(0, 114, 187)"
-        ]
+        "color": "rgb(0, 114, 187)"
     },
     {
         "logo": "shriram_logo.png",
@@ -37,12 +27,7 @@
             "No Video KYC required"
         ],
         "interestRate": 8.8,
-        "color": "rgb(1, 1, 1)",
-        "cardColors": [
-            "#F4F4F4",
-            "#1A1B1E",
-            "rgb(1, 1, 1)"
-        ]
+        "color": "rgb(1, 1, 1)"
     },
     {
         "logo": "mahindra_logo.png",
@@ -52,11 +37,6 @@
             "No Video KYC required"
         ],
         "interestRate": 8.8,
-        "color": "rgb(255, 0, 0)",
-        "cardColors": [
-            "#FFEFEF",
-            "#FF0000",
-            "rgb(255, 0, 0)"
-        ]
+        "color": "rgb(255, 0, 0)"
     }
 ]

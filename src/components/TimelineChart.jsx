@@ -11,7 +11,7 @@ const data = [
     ["1", "Utkarsh FD 1", new Date(2024, 1, 1), new Date(2024, 8, 8)],
     ["2", "Shriram FD Plan 2", new Date(2024, 1, 5), new Date(2025, 4, 24)],
     ["3", "Bajaj Finserv FD 1", new Date(2024, 5, 2), new Date(2025, 4, 9)],
-    ["3", "Mahindra FD Plan 2", new Date(2024, 6, 2), new Date(2025, 7, 4)],
+    ["3", "Mahindra FD Plan 2", new Date(2024, 6, 2), new Date(2026, 7, 4)],
 ];
 
 const options = {

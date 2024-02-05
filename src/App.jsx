@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Header from './components/Header/Header'
 import Piechart from './components/Piechart'
 import TimelineChart from './components/TimelineChart';
@@ -83,7 +83,27 @@ const dynamicSections = [
 
 function App() {
   const [startIndex, setStartIndex] = useState(0);
-  const faqCardShown = 3;
+  const [faqCardShown, setFaqCardShown] = useState(3);
+
+  useEffect(() => {
+    const updateFaqCardShown = () => {
+      if (window.innerWidth <= 640) {
+        setFaqCardShown(1);
+      } else if (window.innerWidth <= 991) {
+        setFaqCardShown(2);
+      } else {
+        setFaqCardShown(3);
+      }
+    }
+
+    updateFaqCardShown();
+
+    window.addEventListener('resize', updateFaqCardShown);
+
+    return () => {
+      window.removeEventListener('resize', updateFaqCardShown);
+    }
+  }, [])
 
   const handleNext = () => {
     if (startIndex === faqData.length - faqCardShown) return false;
@@ -110,12 +130,12 @@ function App() {
             </div>
             <Piechart />
           </div>
-          <div className='w-2/3 max-sm:w-full bg-white p-4 shadow-md'>
+          <div className='w-2/3 overflow-x-scroll max-sm:w-full bg-white p-4 shadow-md'>
             <h2 className='mb-4'>FD Maturity Timeline</h2>
             <TimelineChart />
           </div>
         </section>
-        <section className='flex gap-4 max-sm:flex-col'>
+        <section className='flex gap-4 max-sm:flex-col-reverse'>
           <div className='w-8/12 max-sm:w-full max-sm:flex-col max-[991px]:w-[50%]'>
             <div className='flex flex-wrap gap-6 justify-between'>
               {
@@ -140,7 +160,7 @@ function App() {
           </div>
           <div className='flex flex-col w-4/12 max-sm:w-full max-[991px]:w-[50%]'>
             {
-              dynamicSections.length > 0 && dynamicSections.map((card, index) => <DynamicSection key={index} card={{ ...card, index, totalCards: dynamicSections.length }} />)
+              dynamicSections.length > 0 && dynamicSections.map((card, index) => <DynamicSection key={index} card={card} index={index} totalCards={dynamicSections.length} />)
             }
           </div>
         </section>

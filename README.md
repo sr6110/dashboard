@@ -40,7 +40,7 @@ Experience the dashboard live at https://dashboardbysunil.netlify.app/.
 
 1. Clone the repository:
    ```bash
-   git clone <need to add url>
+   git clone https://github.com/sr6110/dashboard.git
    ```
 2. Install dependencies:
    ```bash

@@ -1,8 +1,9 @@
+import { memo } from "react";
 import { implementationNeeded } from "../utils/sample";
 import { formatNumber, parseDateString } from "../utils/utility";
 
-const DynamicSection = ({ card }) => {
-    const { title, bankName, dateTitle, date, depositAmount, tenure, interestRate, buttons, index, totalCards } = card;
+const DynamicSection = ({ card, index, totalCards }) => {
+    const { title, bankName, dateTitle, date, depositAmount, tenure, interestRate, buttons } = card;
 
     const { day, monthName, year } = parseDateString(date);
 
@@ -46,4 +47,4 @@ const DynamicSection = ({ card }) => {
 }
 
 
-export default DynamicSection
+export default memo(DynamicSection);
